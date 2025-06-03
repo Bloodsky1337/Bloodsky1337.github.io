@@ -75,10 +75,7 @@ if (window.location.pathname.includes('tickets.html')) {
         e.preventDefault();
         alert('Билет успешно оформлен! На вашу почту отправлено подтверждение.');
         // Здесь можно добавить отправку данных на сервер
-    });
-}
-
-document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('payment-form');
     const successMessage = document.getElementById('success-message');
     const ticketCodeElement = document.getElementById('ticket-code');
@@ -202,3 +199,7 @@ QR-код для входа прикреплен к письму.
         }
     }
 });
+    });
+}
+
+
