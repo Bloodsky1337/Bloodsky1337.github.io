@@ -484,3 +484,99 @@ body {
 .pay-button:hover {
     opacity: 0.9;
 }
+
+/* Добавляем новые стили для симуляции карты */
+.card-simulation {
+    margin-bottom: 2rem;
+}
+
+.card-front {
+    background: linear-gradient(135deg, #434343, #000000);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card-number {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.card-number input {
+    width: 22%;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+#card-name {
+    width: 60%;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.expiry-cvv {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.expiry-cvv input {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.expiry-cvv input:first-child {
+    width: 60%;
+}
+
+.expiry-cvv input:last-child {
+    width: 35%;
+}
+
+/* Стили для QR-кода */
+#qr-code {
+    margin: 1rem auto;
+    width: 150px;
+    height: 150px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Анимация загрузки */
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
